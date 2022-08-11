@@ -14,13 +14,12 @@ const movimiento = keyframes`
 
 export const HomeContainer = styled.section`
     display: flex;
-    -webkit-box-align: center;
     align-items: center;
-    -webkit-box-pack: center;
     justify-content: center;
-    min-height: calc(100vh - 175px);
+    min-height: 95vh;
     flex-grow: 1;
     gap: 40px;
+    background-color: red;
 
     @media (max-width: 940px){
         flex-direction: column;

@@ -11,7 +11,7 @@ const NavBar = ({toggle}) => {
             <FaBars />
         </NavMenu>
         <NavWrapper>
-            <NavPages to='/about'>About</NavPages>
+            <NavPages to='/about' >About</NavPages>
             <NavPages to='/contact'>Contact</NavPages>
             <NavLogo to='/'>Jacobs Logo</NavLogo>
             <NavPages to='/portfolio'>Portfolio</NavPages>

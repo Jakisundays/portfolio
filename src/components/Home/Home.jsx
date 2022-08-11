@@ -48,7 +48,7 @@ const Home = () => {
                             <Gh />
                         </SocialLink>
                 </HomeSocial>
-                </HomeBox>
+            </HomeBox>
     </HomeContainer>
   )
 }

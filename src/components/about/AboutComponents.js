@@ -1,10 +1,10 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 
 
 const Button = styled.div`
-    height: 10px;
-    width: 10px;
+    height: 12px;
+    width: 12px;
     border-radius: 50%;
     border: 1px solid #000;
     position: relative;
@@ -16,31 +16,34 @@ const Button = styled.div`
 `
 
 const P = styled.p`
-    position: relative;
-    left: 50%;
-    margin-left: -8.5em;
+    margin: 0.65rem 0;
     text-align: left;
     font-size: 1.25em;
-    font-family: monospace;
     white-space: normal;
     overflow: hidden;
-    width: 0;
+    color: #f8f8f8;
 `
 
 const Span = styled.span`
-    color: #fff;
     font-weight: bold;
 `
 
-export const AboutContainer = styled.section``
+export const AboutContainer = styled.section`
+    min-height: calc(100vh - 175px);
+`
 
-export const AboutTerminal = styled.div``
+export const AboutTerminal = styled.div`
+    margin: 10px auto;
+    width: 550px;
+    background-color: rgb(39, 36, 47);
+    border-radius: 5px;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 40%);
+`
 
 export const AboutMenu = styled.div`
-    width: 550px;
-    box-sizing: border-box;
+    font-size: 1rem;
     height: 25px;
-    background-color: #bbb;
+    background-color: rgb(140, 140, 140);
     margin: 0 auto;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
@@ -58,25 +61,23 @@ export const FakeZoom = styled(Button)`
 `
 
 export const AboutScreen = styled.div`
-    background-color: #151515;
-    box-sizing: border-box;
-    width: 550px;
-    margin: 0 auto;
-    padding: 20px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 13px;
 `
 export const AboutTopLine = styled(P)`
-  
 `
-export const AboutDesc = styled(P)``
-export const AboutEnd = styled(P)``
-export const AboutFinish = styled(P)``
+export const AboutDesc = styled(P)`
+`
 
-export const AboutSpan = styled(Span)``
-export const AboutSpan2 = styled(Span)``
-export const AboutSpan3 = styled(Span)``
-export const AboutSpan4 = styled(Span)``
+export const AboutSpan = styled(Span)`
+    color: red;
+`
+export const AboutSpan2 = styled(Span)`
+    color: yellow;
+`
+
 
 
 

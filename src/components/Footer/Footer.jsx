@@ -1,6 +1,6 @@
 import React from 'react'
-import { FooterContainer, FooterDisplay, FooterName, FooterWrapper, FooterYear, FooterImg } from './FooterElements'
-import EmojiGif from '/Users/jacobdominguez/Documents/codiyapa/portfolio/src/images/pp.jpeg';
+import { FooterContainer, FooterDisplay, FooterName, FooterWrapper, FooterYear, FooterImg, SpanF } from './FooterElements'
+import EmojiGif from '/Users/jacobdominguez/Documents/codiyapa/portfolio/src/images/Footer2.gif';
 
 const Footer = () => {
   return (
@@ -8,9 +8,9 @@ const Footer = () => {
       <FooterWrapper>
         <FooterDisplay>
           <FooterImg src={EmojiGif} />
-          <FooterName to='/'>Jacob Dominguez</FooterName>
+          <FooterName to='/'>Created by --<SpanF>Jacob Dominguez</SpanF></FooterName>
         </FooterDisplay>
-        <FooterYear>2022</FooterYear>
+        <FooterYear>© 2022</FooterYear>
       </FooterWrapper>
     </FooterContainer>
   )

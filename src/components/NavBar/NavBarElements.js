@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 
 export const NavContainer = styled.nav`
-    border: 2px solid red;
     height: 70px;
+    background-color: white;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -21,7 +21,6 @@ export const NavMenu = styled.div`
         display: flex;
         justify-content: space-around;
         width: 100%;
-
         font-size: 1.8rem;
         cursor: pointer;
         color: black;
@@ -36,25 +35,109 @@ export const NavWrapper = styled.div`
     font-size: 1rem;
     text-align: center;
     margin-left: -22px;
-    border: 2px solid green;
 
     @media screen and (max-width: 760px){
         display: none;
     }
 `
 export const NavPages = styled(Link)`
+    text-decoration: none;
+    font-size: 17px;
+    background: transparent;
+    border: none;
+    padding: 1em 1.5em;
     color: black;
-    border: 1px solid black;
-    display: flex;
-    align-items: center;
-    padding: 0 1rem;
-    height: 100%;
-    cursor: pointer;
-    font-size: 23px;
+    text-transform: uppercase;
+    position: relative;
+    transition: .5s ease;
 
-    &.active{
-        border-botton: 3px solid #01bf71;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 0;
+        background-color: blue;
+        transition: .5s ease;
+      }
+    
+    &:hover{
+        color: white;
+        transition-delay: .5s;
     }
+
+    &:hover::before {
+        width: 100%;
+      }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 0;
+        width: 100%;
+        background-color: black;
+        transition: .4s ease;
+        z-index: -1;
+      }
+      
+      &:hover::after {
+        height: 100%;
+        transition-delay: 0.4s;
+        color: aliceblue;
+      }
+    
 `
+
 export const NavLogo = styled(NavPages)``
-export const NavResume = styled.button``
+export const NavResume = styled.button`
+text-decoration: none;
+font-size: 17px;
+background: transparent;
+border: none;
+padding: 1em 1.5em;
+color: black;
+text-transform: uppercase;
+position: relative;
+transition: .5s ease;
+
+&::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: blue;
+    transition: .5s ease;
+  }
+
+&:hover{
+    color: white;
+    transition-delay: .5s;
+}
+
+&:hover::before {
+    width: 100%;
+  }
+
+&::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background-color: black;
+    transition: .4s ease;
+    z-index: -1;
+  }
+  
+  &:hover::after {
+    height: 100%;
+    transition-delay: 0.4s;
+    color: aliceblue;
+  }
+`
