@@ -1,6 +1,6 @@
 import React from 'react'
 import { FooterContainer, FooterDisplay, FooterName, FooterWrapper, FooterYear, FooterImg, SpanF } from './FooterElements'
-import EmojiGif from '/Users/jacobdominguez/Documents/codiyapa/portfolio/src/images/Footer2.gif';
+import EmojiGif from '/Users/jacobdominguez/Documents/codiyapa/portfolio/src/images/Footer.gif';
 
 const Footer = () => {
   return (

@@ -18,7 +18,7 @@ export const FooterDisplay = styled.div`
     align-items: center;
 `
 export const FooterImg = styled.img`
-    max-width: 120px;
+    max-width: 85px;
 ` 
 export const FooterName = styled(Link)`
     color: black;
@@ -27,8 +27,8 @@ export const FooterName = styled(Link)`
 ` 
 export const FooterYear = styled.p`
     position: relative;
-    left: 50px;
-    bottom: 25px;
+    left: 35px;
+    bottom: 35px;
     color: black;
     text-align: center;
 ` 

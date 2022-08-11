@@ -14,7 +14,7 @@ export const PortfolioWrapper = styled.div`
     gap: 10px;
 `
 export const PortfolioImg = styled.img`
-    max-width: 100%;
+    max-width: 75%;
 `
 export const PortfolioH1 = styled.h1`
     font-size: 32px;

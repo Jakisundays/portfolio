@@ -19,7 +19,6 @@ export const HomeContainer = styled.section`
     min-height: 95vh;
     flex-grow: 1;
     gap: 40px;
-    background-color: red;
 
     @media (max-width: 940px){
         flex-direction: column;

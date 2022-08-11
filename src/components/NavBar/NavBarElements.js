@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 export const NavContainer = styled.nav`
     height: 70px;
-    background-color: white;
     position: sticky;
     top: 0;
     z-index: 10;

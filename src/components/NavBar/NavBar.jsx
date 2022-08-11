@@ -7,7 +7,6 @@ const NavBar = ({toggle}) => {
   return (
     <NavContainer>
         <NavMenu onClick={toggle}>
-            <NavLogo to='/'>Jacobs Logo</NavLogo>
             <FaBars />
         </NavMenu>
         <NavWrapper>

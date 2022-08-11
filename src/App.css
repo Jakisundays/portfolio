@@ -4,3 +4,11 @@
   padding: 0;
   font-family: 'Titillium Web', sans-serif;
 }
+
+:root {
+  --primary: #d6dac1;
+  --secondary: #c0c4ad;
+  --dark: #b08e6b;
+  --darker: #7a5c3c;
+  --white: #ffffff;
+}
