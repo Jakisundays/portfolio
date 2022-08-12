@@ -8,7 +8,8 @@ export const NavContainer = styled.nav`
     top: 0;
     z-index: 10;
     padding: 10px;
-
+    border-bottom: outset;
+    background-color: white;
     @media screen and (max-width: 960px){
         transition: 0.7s all ease;
     }

@@ -8,6 +8,7 @@ export const ContactContainer = styled.section`
     justify-content: center;
     align-items: center;
     padding: 5px 10px;
+    border-radius: 10px;
 
     &:after{
         content: '';
@@ -16,7 +17,6 @@ export const ContactContainer = styled.section`
         height: 100%;
         left: 0;
         top: 0;
-        background: url("img/bg.jpg") no-repeat center;
         background-size: cover;
         filter: blur(50px);
         z-index: -1;
@@ -29,13 +29,16 @@ export const ContactWrapper = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
+    border-radius: 10px;
     background-color: #fff;
     box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
 `
 
 export const ContactImg = styled.img`
     background-size: cover;
-    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right: 2px outset #2ecc71;
 `
 
 export const ContactInfo = styled.form`
@@ -63,7 +66,7 @@ export const ContactInput = styled.input`
     line-height: 28px;
     border: 2px solid transparent;
     border-bottom-color: #2ecc71;
-    padding: .4rem 0;
+    padding: .7rem 0;
     margin: .4rem 0;
     outline: none;
     background-color: transparent;
@@ -72,8 +75,7 @@ export const ContactInput = styled.input`
 
     &:focus, &:hover {
         outline: none;
-
-        border-radius: 10px;
+        border-radius: 4px;
         border-color: #2ecc71;
        }
        
@@ -89,6 +91,7 @@ export const ContactInput = styled.input`
 export const ContactMsg = styled.textarea`
     min-height: 150px;
     border-color: #2ecc71;
+    border-radius: 4px;
 `
 export const ContactButton = styled.button`
     width: 100%;
@@ -100,4 +103,5 @@ export const ContactButton = styled.button`
     outline: none;
     cursor: pointer;
     transition: .3s;
+    border-radius: 4px;
 `

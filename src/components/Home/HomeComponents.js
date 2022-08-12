@@ -16,7 +16,7 @@ export const HomeContainer = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 95vh;
+    min-height: 80vh;
     flex-grow: 1;
     gap: 40px;
 

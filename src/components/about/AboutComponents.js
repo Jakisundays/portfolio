@@ -8,7 +8,7 @@ const Button = styled.div`
     border-radius: 50%;
     border: 1px solid #000;
     position: relative;
-    top: 6px;
+    top: 1px;
     left: 6px;
     background-color: #ff3b47;
     border-color: #9d252b;
@@ -29,11 +29,11 @@ const Span = styled.span`
 `
 
 export const AboutContainer = styled.section`
-    min-height: calc(100vh - 175px);
+    min-height: 80vh;
 `
 
 export const AboutTerminal = styled.div`
-    margin: 10px auto;
+    margin: 20px auto 0;
     width: 550px;
     background-color: rgb(39, 36, 47);
     border-radius: 5px;
