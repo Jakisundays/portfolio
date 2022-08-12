@@ -8,10 +8,14 @@ export const NavContainer = styled.nav`
     top: 0;
     z-index: 10;
     padding: 10px;
-    border-bottom: outset;
-    background-color: white;
+    background-color: var(--dark);
+
     @media screen and (max-width: 960px){
         transition: 0.7s all ease;
+    }
+
+    @media screen and (max-width: 760px){
+      border: none;
     }
 `
 export const NavMenu = styled.div`
@@ -19,12 +23,12 @@ export const NavMenu = styled.div`
 
     @media screen and (max-width: 760px){
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         width: 100%;
-        font-size: 1.8rem;
+        font-size: 2rem;
         cursor: pointer;
-        color: black;
-        border: 1px solid black;
+        margin-top: 8px;
+        color: var(--primary);
     }
 `
 
@@ -35,6 +39,7 @@ export const NavWrapper = styled.div`
     font-size: 1rem;
     text-align: center;
     margin-left: -22px;
+    height: 100%;
 
     @media screen and (max-width: 760px){
         display: none;
@@ -45,26 +50,26 @@ export const NavPages = styled(Link)`
     font-size: 17px;
     background: transparent;
     border: none;
-    padding: 1em 1.5em;
-    color: black;
+    padding: 1.25em 1em;
+    color: var(--primary);
     text-transform: uppercase;
     position: relative;
-    transition: .5s ease;
+    transition: .3s ease;
 
     &::before {
         content: '';
         position: absolute;
         left: 0;
         bottom: 0;
-        height: 2px;
+        height: 4px;
         width: 0;
-        background-color: blue;
-        transition: .5s ease;
+        background-color: var(--light);
+        transition: .2s ease;
       }
     
     &:hover{
         color: white;
-        transition-delay: .5s;
+        transition-delay: .3s;
     }
 
     &:hover::before {
@@ -78,7 +83,7 @@ export const NavPages = styled(Link)`
         bottom: 0;
         height: 0;
         width: 100%;
-        background-color: black;
+        background-color: var(--primary);
         transition: .4s ease;
         z-index: -1;
       }
@@ -86,7 +91,7 @@ export const NavPages = styled(Link)`
       &:hover::after {
         height: 100%;
         transition-delay: 0.4s;
-        color: aliceblue;
+        color: var(--secondary);
       }
     
 `
@@ -94,50 +99,50 @@ export const NavPages = styled(Link)`
 export const NavLogo = styled(NavPages)``
 export const NavResume = styled.button`
 text-decoration: none;
-font-size: 17px;
-background: transparent;
-border: none;
-padding: 1em 1.5em;
-color: black;
-text-transform: uppercase;
-position: relative;
-transition: .5s ease;
+    font-size: 17px;
+    background: transparent;
+    border: none;
+    padding: 1.25em 1em;
+    color: var(--primary);
+    text-transform: uppercase;
+    position: relative;
+    transition: .3s ease;
 
-&::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 0;
-    background-color: blue;
-    transition: .5s ease;
-  }
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 4px;
+        width: 0;
+        background-color: var(--light);
+        transition: .2s ease;
+      }
+    
+    &:hover{
+        color: white;
+        transition-delay: .3s;
+    }
 
-&:hover{
-    color: white;
-    transition-delay: .5s;
-}
+    &:hover::before {
+        width: 100%;
+      }
 
-&:hover::before {
-    width: 100%;
-  }
-
-&::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 0;
-    width: 100%;
-    background-color: black;
-    transition: .4s ease;
-    z-index: -1;
-  }
-  
-  &:hover::after {
-    height: 100%;
-    transition-delay: 0.4s;
-    color: aliceblue;
-  }
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 0;
+        width: 100%;
+        background-color: var(--primary);
+        transition: .4s ease;
+        z-index: -1;
+      }
+      
+      &:hover::after {
+        height: 100%;
+        transition-delay: 0.4s;
+        color: var(--secondary);
+      }
 `

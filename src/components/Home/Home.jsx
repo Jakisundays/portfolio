@@ -36,15 +36,15 @@ const Home = () => {
                     ))}
                 </HomeInfo>
                 <HomeSocial>
-                        <SocialLink target="_blank" href='https://www.w3schools.com'>
+                        <SocialLink target="_blank" to=''>
                             <Lk />
                         </SocialLink>
                         
-                        <SocialLink  href='' target="_blank">
+                        <SocialLink  to='' target="_blank">
                             <Ig />
                         </SocialLink>
 
-                        <SocialLink  href='' target="_blank">
+                        <SocialLink  to='' target="_blank">
                             <Gh />
                         </SocialLink>
                 </HomeSocial>

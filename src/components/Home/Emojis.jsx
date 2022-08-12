@@ -5,7 +5,7 @@ const Emojis = (props) => {
     const {emoji, text} = props;
 
     const EmojiContainer = styled.li`
-        font-size: 1rem;
+        font-size: 1.3rem;
         line-height: 1.4;
         text-align: left;
         transition: all 250ms ease;
@@ -13,12 +13,13 @@ const Emojis = (props) => {
 
         &:hover{
           transform: translateY(-3px);
+          color: var(--primary);
           transition: all 250ms ease;
         }
     `
 
     const EmojiSpan = styled.span`
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     `
   return (
     <EmojiContainer>

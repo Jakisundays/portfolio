@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { AiFillGithub, AiFillLinkedin, AiOutlineInstagram } from 'react-icons/ai';
+import { Link } from "react-router-dom";
 
 const movimiento = keyframes`
     0% { transform: rotate( 0.0deg) }
@@ -17,7 +18,7 @@ export const HomeContainer = styled.section`
     align-items: center;
     justify-content: center;
     min-height: 80vh;
-    flex-grow: 1;
+    background-color: var(--dark);
     gap: 40px;
 
     @media (max-width: 940px){
@@ -30,31 +31,30 @@ export const HomeBox = styled.div`
     display: block;
 `
 export const HomeAvatar = styled.img`
-    background: linear-gradient(135deg, rgb(11, 15, 74), rgb(166,104,255));
-    width: 35vh;
-    height: 35hv;
+    background: linear-gradient(180deg, rgba(245,130,167,1) 21%, rgba(241,0,134,1) 48%, rgba(244,244,244,1) 81%);
+    width: 45vh;
+    height: 45hv;
     border-radius: 50%;
     padding: 0.75rem;
-    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 40%);
+    box-shadow: 0 0.5rem 1rem var(--light);
     
     @media (max-width: 600px){
-        margin-bottom: 0px;
+        margin-bottom: 10px;
     }
 `
 
 
 export const HomeH1 = styled.h1`
-    font-size: 2rem;
+    font-size: 3.5rem;
     text-align: center;
-    
+    color: white;
     
     @media (max-width: 940px){
         font-size: 3rem;
-        text-align: left;
     }
 `
 export const HomeName = styled.span`
-    background: linear-gradient(135deg, rgb(11, 15, 74), rgb(166,104,255));
+    background: linear-gradient(180deg, rgba(245,130,167,1) 21%, rgba(241,0,134,1) 48%, rgba(244,244,244,1) 81%);
     -webkit-background-clip: text;
     color: transparent;
 `
@@ -66,13 +66,12 @@ export const HomeHand = styled.span`
     display: inline-block;
 `
 export const HomeH2 = styled.h2`
-    font-size: 1.25rem;
+    font-size: 2.25rem;
     text-align: center;
-    
+    color: white;
 
     @media (max-width: 940px){
         font-size: 2rem;
-        text-align: left;
     }
 `
 
@@ -83,6 +82,7 @@ export const HomeInfo = styled.ul`
     gap: 0.5rem;
     justify-content: center;
     margin-bottom: 20px;
+    color: white;
 `
 export const HomeSocial = styled.div`
     display: flex;
@@ -94,15 +94,15 @@ export const HomeSocial = styled.div`
         font-size: 2rem;
     }
 `
-export const SocialLink = styled.a`
+export const SocialLink = styled(Link)`
     color: #1f1f1f;
     cursor: pointer;
-    color: rgb(11, 15, 74);
+    color: white;
     transition: color 200ms ease;
 
     &:hover{
-        color: rgb(166,104,255);
-        transition: color 200ms ease;
+        color: var(--primary);
+        transition: color 400ms ease;
     }
 `
 export const Gh = styled( AiFillGithub)`

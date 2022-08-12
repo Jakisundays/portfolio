@@ -3,21 +3,40 @@ import { Link } from "react-router-dom";
 
 export const PortfolioContainer = styled.section`
     min-height: 95vh;
-    margin-bottom: 20px;
+    background-color: var(--dark);
+    padding: 40px 0;
 `
 export const PortfolioWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    margin: 10px auto;
+    margin: 0 auto;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    border-radius: 2px;
+    width: 70vw;
+    padding: 15px;
+    background-color: white;
+    box-shadow: var(--light) 0px 2px 4px, var(--light) 0px 7px 13px -3px, var(--light) 0px -3px 0px inset;
+    transition: border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 1s,
+                transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+
+
+    &:hover {
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    transform: scale(1.05);
+    }
 `
 export const PortfolioImg = styled.img`
     max-width: 75%;
 `
 export const PortfolioH1 = styled.h1`
     font-size: 32px;
+    color: var(--dark);
+`
+
+export const PortfolioDesc = styled.p`
+    padding: 18px;
 `
 
 export const PortfolioDemo = styled(Link)`
@@ -28,15 +47,15 @@ export const PortfolioDemo = styled(Link)`
     text-align: center;
     font-weight: bold;
     padding: 0.7em 2em;
-    border: 3px solid #FF0072;
+    border: 3px solid var(--dark);
     border-radius: 2px;
     position: relative;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
-    color: #FF0072;
+    box-shadow: 0 2px 10px var(--light), 0 3px 6px var(--secondary);
+    color: var(--dark);
     text-decoration: none;
     transition: 0.3s ease all;
     z-index: 1;
-    }
+    margin-bottom: 15px;
 
     &:before {
     transition: 0.5s all ease;
@@ -47,7 +66,7 @@ export const PortfolioDemo = styled(Link)`
     bottom: 0;
     opacity: 0;
     content: '';
-    background-color: #FF0072;
+    background-color: var(--light);
     z-index: -1;
     }
 
