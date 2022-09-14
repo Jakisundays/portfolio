@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 export const PortfolioContainer = styled.section`
     min-height: 95vh;
@@ -9,7 +8,7 @@ export const PortfolioContainer = styled.section`
 export const PortfolioWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 2px auto 18px auto;
     align-items: center;
     justify-content: center;
     border-radius: 2px;
@@ -39,7 +38,7 @@ export const PortfolioDesc = styled.p`
     padding: 18px;
 `
 
-export const PortfolioDemo = styled(Link)`
+export const PortfolioDemo = styled.a`
     font-size: 18px;
     letter-spacing: 2px;
     text-transform: uppercase;

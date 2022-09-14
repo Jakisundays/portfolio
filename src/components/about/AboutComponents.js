@@ -29,15 +29,26 @@ const Span = styled.span`
 `
 
 export const AboutContainer = styled.section`
-    min-height: 80vh;
+    min-height: 81vh;
+    background-color: var(--dark);
+    padding: 10px;
+    @media (min-height: 1000px){
+        min-height: 90vh;
+    }
 `
 
 export const AboutTerminal = styled.div`
-    margin: 20px auto 0;
+    margin: 2px auto 18px auto;
     width: 550px;
     background-color: rgb(39, 36, 47);
     border-radius: 5px;
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 40%);
+
+
+    @media (max-width: 375px){
+        max-width: 370px;
+    }
+
 `
 
 export const AboutMenu = styled.div`
@@ -72,13 +83,22 @@ export const AboutDesc = styled(P)`
 `
 
 export const AboutSpan = styled(Span)`
-    color: red;
+    color: var(--light);
 `
 export const AboutSpan2 = styled(Span)`
     color: yellow;
 `
 
+export const AboutSkills = styled.ul`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    list-style-type: none;
+`
 
-
+export const AboutLi = styled.li`
+    margin-top: 10px;
+`
 
      

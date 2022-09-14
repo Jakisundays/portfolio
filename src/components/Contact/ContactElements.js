@@ -8,10 +8,6 @@ export const ContactContainer = styled.section`
     background-color: var(--dark);
 
 
-    @media (max-width: 840px){
-        height: auto;
-    }
-
     &:after{
         content: '';
         position: absolute;
@@ -24,32 +20,40 @@ export const ContactContainer = styled.section`
         z-index: -1;
     }
 
+    @media (min-height: 850px){
+        min-height: 90vh;
+    }
+
 `
 export const ContactWrapper = styled.div`
     display: flex;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 30px;
     background-color: #fff;
-    box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
-    margin: 29px 0;
+    margin: 20px 10px;
 
-    @media (max-width: 840px){
+    @media (max-width: 760px){
         flex-direction: column;
+        width: 80%;
     }
 `
 
-
 export const ContactImg = styled.img`
     background-size: cover;
+    width: 50%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    border-right: 2px outset #2ecc71;
+
+    @media (max-width: 760px){
+        display: none;
+    }
 `
 
 export const ContactInfo = styled.form`
     padding: 25px 40px;
     display: flex;
     flex-direction: column;
+    width: 100%;
 `
 export const ContactH2 = styled.h2`
     position: relative;
@@ -66,14 +70,14 @@ export const ContactH2 = styled.h2`
         height: 4px;
         width: 50px;
         border-radius: 2px;
-        background-color: #2ecc71;
+        background-color: var(--primary);
     }
 `
 
 export const ContactInput = styled.input`
     line-height: 28px;
     border: 2px solid transparent;
-    border-bottom-color: #2ecc71;
+    border-bottom-color: var(--primary);
     padding: .7rem 0;
     margin: .4rem 0;
     outline: none;
@@ -84,7 +88,7 @@ export const ContactInput = styled.input`
     &:focus, &:hover {
         outline: none;
         border-radius: 4px;
-        border-color: #2ecc71;
+        border-color: var(--primary);
        }
        
     &::placeholder {
@@ -98,18 +102,18 @@ export const ContactInput = styled.input`
 `
 export const ContactMsg = styled.textarea`
     min-height: 130px;
-    border-color: #2ecc71;
+    border-color: var(--primary);
     margin: 10px 0;
     line-height: 28px;
     border: 2px solid transparent;
-    border-bottom-color: #2ecc71;
+    border-bottom-color: var(--primary);
     color: black;
     transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
 
     &:focus, &:hover {
         outline: none;
         border-radius: 4px;
-        border-color: #2ecc71;
+        border-color: var(--primary);
        }
        
     &::placeholder {
@@ -121,23 +125,23 @@ export const ContactMsg = styled.textarea`
         transition: opacity .3s;
        }
 `
-export const ContactButton = styled.button`
+export const ContactButton = styled.input`
     font-size: 18px;
+    align-self: center;
+    width: 100px;
     letter-spacing: 2px;
-    text-transform: uppercase;
     display: inline-block;
     text-align: center;
     font-weight: bold;
-    padding: 0.7em 2em;
-    border: 3px solid var(--dark);
+    padding: 0.5em 0.2em;
+    border: 3px solid var(--primary);
     border-radius: 2px;
     position: relative;
     box-shadow: 0 2px 10px var(--light), 0 3px 6px var(--secondary);
     color: var(--dark);
     text-decoration: none;
     transition: 0.3s ease all;
-    z-index: 1;
-    margin-bottom: 15px;
+    background-color: var(--primary);
 
     &:before {
     transition: 0.5s all ease;
@@ -148,7 +152,6 @@ export const ContactButton = styled.button`
     bottom: 0;
     opacity: 0;
     content: '';
-    background-color: var(--light);
     z-index: -1;
     }
 
@@ -157,7 +160,7 @@ export const ContactButton = styled.button`
     }
 
     &:hover:before, &:focus:before {
-    transition: 0.5s all ease;
+    transition: 0.3s all ease;
     left: 0;
     right: 0;
     opacity: 1;
@@ -165,4 +168,5 @@ export const ContactButton = styled.button`
 
     &:active {
     transform: scale(0.9);
+    }
 `

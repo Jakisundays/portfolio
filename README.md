@@ -1,5 +1,8 @@
-#things to do
--arreglar contact (buscar foto + flex)
--arreglar colores del footer 
--Agregar descripcion del proyecto al portfolio
--
+#ToDos
+    -Link Social Media
+        -Arreglar Linked y Github
+    -Icons
+
+#CheckPoint
+    -Sacar foto
+

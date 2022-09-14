@@ -25,6 +25,18 @@ export const HomeContainer = styled.section`
         flex-direction: column;
         gap: 0;
     }
+
+    @media (max-width: 375px){
+        width: 375px;
+    }
+
+    @media (max-width: 360px){
+        width: 360px;
+    }
+
+    @media (min-height: 1000px){
+        min-height: 90vh;
+    }
 `
 
 export const HomeBox = styled.div`

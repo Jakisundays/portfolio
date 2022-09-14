@@ -7,6 +7,8 @@ export const FooterContainer = styled.footer`
     right: 0;
     display: flex;
     justify-content: center;
+    background-color: var(--dark);
+    
 `
 export const FooterWrapper = styled.div`
     display: flex;
@@ -18,10 +20,11 @@ export const FooterDisplay = styled.div`
     align-items: center;
 `
 export const FooterImg = styled.img`
-    max-width: 85px;
+    max-width: 80px;
+    margin: 5px;
 ` 
 export const FooterName = styled(Link)`
-    color: black;
+    color: white;
     text-decoration: none;
     text-align: center;
 ` 
@@ -29,11 +32,11 @@ export const FooterYear = styled.p`
     position: relative;
     left: 35px;
     bottom: 35px;
-    color: black;
+    color: white;
     text-align: center;
 ` 
 
 export const SpanF = styled.span`
-    color: blue;
+    color: var(--primary);
     font-weight: bold;
 `

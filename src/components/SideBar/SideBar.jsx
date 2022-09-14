@@ -12,9 +12,9 @@ const SideBar = ({isOpen, toggle}) => {
             <SideBarWrapper>
                 <SideBarMenu>
                     <SideBarLink to='/' onClick={toggle}>Home</SideBarLink>
-                    <SideBarLink to='/about' onClick={toggle}>about</SideBarLink>
-                    <SideBarLink to='/contact' onClick={toggle}>contact</SideBarLink>
-                    <SideBarLink to='/portfolio' onClick={toggle}>portfolio</SideBarLink>
+                    <SideBarLink to='/about' onClick={toggle}>About</SideBarLink>
+                    <SideBarLink to='/contact' onClick={toggle}>Contact</SideBarLink>
+                    <SideBarLink to='/portfolio' onClick={toggle}>Portfolio</SideBarLink>
                     <SideBarButton>resume</SideBarButton>
                 </SideBarMenu>
             </SideBarWrapper>

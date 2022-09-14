@@ -15,7 +15,7 @@ const Home = () => {
     },
     {
         emoji: "📧",
-        text: "JacobGuillermooo@Gmail.com"
+        text: "jacobguillermooo@gmail.com"
     }]
 
     

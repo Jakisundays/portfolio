@@ -12,7 +12,7 @@ const NavBar = ({toggle}) => {
         <NavWrapper>
             <NavPages to='/about' >About</NavPages>
             <NavPages to='/contact'>Contact</NavPages>
-            <NavLogo to='/'>Jacobs Logo</NavLogo>
+            <NavLogo to='/'>Home</NavLogo>
             <NavPages to='/portfolio'>Portfolio</NavPages>
             <NavResume>Resume download</NavResume>
             

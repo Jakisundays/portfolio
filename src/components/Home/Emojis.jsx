@@ -16,6 +16,10 @@ const Emojis = (props) => {
           color: var(--primary);
           transition: all 250ms ease;
         }
+
+        @media (max-width: 426px){
+          margin-left: 20px;
+        }
     `
 
     const EmojiSpan = styled.span`
