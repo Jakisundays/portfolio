@@ -12,8 +12,8 @@ const NavBar = ({toggle}) => {
         <NavWrapper>
             <NavPages to='/about' >About</NavPages>
             <NavPages to='/contact'>Contact</NavPages>
-            <NavLogo to='/'>Home</NavLogo>
-            <NavPages to='/portfolio'>Portfolio</NavPages>
+            <NavLogo to='/portfolio'>Home</NavLogo>
+            <NavPages to='/work'>Portfolio</NavPages>
             <NavResume>Resume download</NavResume>
             
         </NavWrapper>
