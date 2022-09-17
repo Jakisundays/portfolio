@@ -1,6 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { AiFillGithub, AiFillLinkedin, AiOutlineInstagram } from 'react-icons/ai';
-import { Link } from "react-router-dom";
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 const movimiento = keyframes`
     0% { transform: rotate( 0.0deg) }
@@ -107,7 +106,7 @@ export const HomeSocial = styled.div`
         font-size: 2rem;
     }
 `
-export const SocialLink = styled(Link)`
+export const SocialLink = styled.a`
     color: #1f1f1f;
     cursor: pointer;
     color: white;
@@ -126,8 +125,5 @@ export const Lk = styled(AiFillLinkedin)`
     text-decoration: none;
     font-size: 3rem;
 `
-export const Ig = styled(AiOutlineInstagram)`
-    text-decoration: none;
-    font-size: 3rem;
-`
+
 

@@ -15,7 +15,7 @@ const NavBar = ({toggle}) => {
             <NavPages to='/contact'>Contact</NavPages>
             <NavLogo to='/portfolio'>Home</NavLogo>
             <NavPages to='/work'>Portfolio</NavPages>
-            <NavResume href={cv} download>Resume download</NavResume>
+            <NavResume href={cv} download>Download CV</NavResume>
             
         </NavWrapper>
     </NavContainer>

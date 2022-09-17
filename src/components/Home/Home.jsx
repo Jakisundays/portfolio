@@ -1,6 +1,6 @@
 import React from 'react'
 import Emojis from './Emojis'
-import { HomeContainer, HomeAvatar, HomeBox, HomeH1, HomeName, HomeHand, HomeH2, HomeInfo, HomeSocial, Gh, Lk, Ig, SocialLink } from './HomeComponents'
+import { HomeContainer, HomeAvatar, HomeBox, HomeH1, HomeName, HomeHand, HomeH2, HomeInfo, HomeSocial, Gh, Lk, SocialLink } from './HomeComponents'
 import me from '/Users/jacobdominguez/Documents/codiyapa/portfolio/src/images/pp.png';
 
 
@@ -36,15 +36,11 @@ const Home = () => {
                     ))}
                 </HomeInfo>
                 <HomeSocial>
-                        <SocialLink target="_blank" to=''>
+                        <SocialLink target="_blank" href='https://www.linkedin.com/in/jacobguillermo/'>
                             <Lk />
                         </SocialLink>
                         
-                        <SocialLink  to='' target="_blank">
-                            <Ig />
-                        </SocialLink>
-
-                        <SocialLink  to='' target="_blank">
+                        <SocialLink  href='https://github.com/Jakisundays' target="_blank">
                             <Gh />
                         </SocialLink>
                 </HomeSocial>

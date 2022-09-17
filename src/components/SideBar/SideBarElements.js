@@ -68,7 +68,7 @@ export const SideBarButton = styled.a`
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    text-decorations: none;
+    text-decoration: none;
     transition: 0.2s ease-in-out;
     color: white;
     cursor: pointer;

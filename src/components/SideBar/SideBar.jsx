@@ -16,7 +16,7 @@ const SideBar = ({isOpen, toggle}) => {
                     <SideBarLink to='/about' onClick={toggle}>About</SideBarLink>
                     <SideBarLink to='/contact' onClick={toggle}>Contact</SideBarLink>
                     <SideBarLink to='/work' onClick={toggle}>Portfolio</SideBarLink>
-                    <SideBarButton href={cv} download> Resume </SideBarButton>
+                    <SideBarButton href={cv} download> Download CV </SideBarButton>
                 </SideBarMenu>
             </SideBarWrapper>
         </SideBarWrapper>

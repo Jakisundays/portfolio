@@ -39,7 +39,7 @@ export const AboutContainer = styled.section`
 
 export const AboutTerminal = styled.div`
     margin: 2px auto 18px auto;
-    width: 550px;
+    max-width: 550px;
     background-color: rgb(39, 36, 47);
     border-radius: 5px;
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 40%);
