@@ -1,5 +1,6 @@
 import React from 'react'
 import { SideBarContainer, Icon, CloseIcon, SideBarWrapper, SideBarMenu, SideBarLink, SideBarButton } from './SideBarElements'
+import cv from '/Users/jacobdominguez/Documents/codiyapa/portfolio/src/images/Resume English.pdf'
 
 
 const SideBar = ({isOpen, toggle}) => {
@@ -15,7 +16,7 @@ const SideBar = ({isOpen, toggle}) => {
                     <SideBarLink to='/about' onClick={toggle}>About</SideBarLink>
                     <SideBarLink to='/contact' onClick={toggle}>Contact</SideBarLink>
                     <SideBarLink to='/work' onClick={toggle}>Portfolio</SideBarLink>
-                    <SideBarButton>Resume</SideBarButton>
+                    <SideBarButton href={cv} download> Resume </SideBarButton>
                 </SideBarMenu>
             </SideBarWrapper>
         </SideBarWrapper>

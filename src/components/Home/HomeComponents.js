@@ -43,11 +43,12 @@ export const HomeBox = styled.div`
     display: block;
 `
 export const HomeAvatar = styled.img`
-    background: linear-gradient(180deg, rgba(245,130,167,1) 21%, rgba(241,0,134,1) 48%, rgba(244,244,244,1) 81%);
+    background: linear-gradient(180deg, rgba(124,105,105,1) 0%, rgba(23,1,13,1) 31%);
+    border: 2px solid linear-gradient(180deg, rgba(245,130,167,1) 21%, rgba(241,0,134,1) 48%, rgba(244,244,244,1) 81%);
     width: 45vh;
     height: 45hv;
     border-radius: 50%;
-    padding: 0.75rem;
+
     box-shadow: 0 0.5rem 1rem var(--light);
     
     @media (max-width: 600px){

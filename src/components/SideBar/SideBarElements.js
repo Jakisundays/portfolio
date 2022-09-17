@@ -63,7 +63,7 @@ export const SideBarLink = styled(LinkR)`
     }
 `
 
-export const SideBarButton = styled.button`
+export const SideBarButton = styled.a`
     display: flex;
     align-items: center;
     justify-content: center;

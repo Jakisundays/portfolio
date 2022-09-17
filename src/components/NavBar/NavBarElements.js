@@ -98,7 +98,7 @@ export const NavPages = styled(Link)`
 `
 
 export const NavLogo = styled(NavPages)``
-export const NavResume = styled.button`
+export const NavResume = styled.a`
 text-decoration: none;
     font-size: 17px;
     background: transparent;
