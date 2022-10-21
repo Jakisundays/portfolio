@@ -1,7 +1,7 @@
 import React from 'react'
 import Emojis from './Emojis'
 import { HomeContainer, HomeAvatar, HomeBox, HomeH1, HomeName, HomeHand, HomeH2, HomeInfo, HomeSocial, Gh, Lk, SocialLink } from './HomeComponents'
-import me from '/Users/jacobdominguez/Documents/codiyapa/portfolio/src/images/pp.png';
+import me from '/Users/jacobdominguez/Documents/codiyapa/portfolio/src/images/pp1.png';
 
 
 const Home = () => {

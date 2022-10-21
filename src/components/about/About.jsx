@@ -3,13 +3,29 @@ import {AboutContainer, AboutTerminal, AboutMenu, FakeClose, FakeMinimize, FakeZ
 
 const About = () => {
 
+  const skills = [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'Bootstrap',
+    'Python',
+    'SQL',
+    'React.js',
+    'Axios',
+    'Redux',
+    'Canva',
+    'Microsoft Office',
+    'Three.js'
+  ]
+
+
   return (
     <AboutContainer>
       <AboutTerminal>
         <AboutMenu>
-          <FakeClose></FakeClose>
-          <FakeMinimize></FakeMinimize>
-          <FakeZoom></FakeZoom>
+          <FakeClose />
+          <FakeMinimize />
+          <FakeZoom />
         </AboutMenu>
         <AboutScreen>
           <AboutTopLine><AboutSpan>hire $ </AboutSpan> yo aboutJacob</AboutTopLine>
@@ -29,17 +45,10 @@ const About = () => {
           <AboutDesc><AboutSpan>skills / tools</AboutSpan> <AboutSpan2>(Master)</AboutSpan2> 
           <AboutSpan> Proficient with: </AboutSpan>
           <AboutSkills>
-            <AboutLi>HTML</AboutLi>
-            <AboutLi>CSS</AboutLi>
-            <AboutLi>Javascript</AboutLi>
-            <AboutLi>Bootstrap</AboutLi>
-            <AboutLi>Python</AboutLi>
-            <AboutLi>SQL</AboutLi>
-            <AboutLi>React.js</AboutLi>
-            <AboutLi>Axios</AboutLi>
-            <AboutLi>Redux</AboutLi>
-            <AboutLi>Canva</AboutLi>
-            <AboutLi>Microsoft Office</AboutLi>
+            {skills.map((skill, index) => 
+              <AboutLi key={index}> {skill} </AboutLi>
+            )}
+           
           </AboutSkills>
           </AboutDesc>
         </AboutScreen>
