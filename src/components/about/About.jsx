@@ -15,7 +15,10 @@ const About = () => {
     'Redux',
     'Canva',
     'Microsoft Office',
-    'Three.js'
+    'Three.js',
+    'Node.js',
+    'Express.js',
+    'MongoDB'
   ]
 
 
