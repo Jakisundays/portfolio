@@ -11,10 +11,10 @@ const NavBar = ({toggle}) => {
             <FaBars />
         </NavMenu>
         <NavWrapper>
-            <NavPages to='/about'>About</NavPages>
-            <NavPages to='/contact'>Contact</NavPages>
+            <NavPages to='/portfolio/about'>About</NavPages>
+            <NavPages to='/portfolio/contact'>Contact</NavPages>
             <NavLogo to='/portfolio'>Home</NavLogo>
-            <NavPages to='/work'>Portfolio</NavPages>
+            <NavPages to='/portfolio/work'>Portfolio</NavPages>
             <NavResume href={cv} download>Download CV</NavResume>
             
         </NavWrapper>
