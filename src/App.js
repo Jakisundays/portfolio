@@ -18,10 +18,10 @@ function App() {
   <SideBar isOpen={isOpen} toggle={toggle}/>
   <NavBar toggle={toggle}/>
     <Routes>
-      <Route index path="/portfolio" element={<Home />} />
-      <Route path="/portfolio/contact" element={<Contact />} />
-      <Route path="/portfolio/work" element={<Portfolio />} />
-      <Route path="/portfolio/about" element={<About />} />
+      <Route index path="/" element={<Home />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/work" element={<Portfolio />} />
+      <Route path="/about" element={<About />} />
     </Routes>
     <Footer />
   </>
