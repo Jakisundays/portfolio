@@ -1,0 +1,42 @@
+export const info = [
+  {
+    image: require("/Users/jacobdominguez/Documents/codiyapa/portfolio/src/images/mockup.png"),
+    alt: "Cotidiano Mockup",
+    h1: "Cotidiano",
+    desc: "Unleash the full potential of the web with our collection of online tools designed for everyday use. Crafted with React.js, our website offers a range of versatile and user-friendly applications that streamline your daily tasks and make your life easier. From productivity boosters to time-saving utilities, our platform has got you covered. Experience seamless functionality and effortless navigation, and discover how our tools can help you get the most out of your day. Upgrade your online experience today with our cutting-edge React-powered website!",
+    demoLink: "https://jakisundays.github.io/cotidiano/",
+    codeLink: "https://github.com/Jakisundays/cotidiano",
+  },
+  {
+    image: require("/Users/jacobdominguez/Documents/codiyapa/portfolio/src/images/mockup2.png"),
+    alt: "Indomita Website",
+    h1: "Indomita Secret Society",
+    desc: "Unlock the secrets of the exclusive Indomita Secret Society with our password-protected website. Join a community of like-minded individuals, where you'll be privy to the latest trends, insights, and more. Built with React.js, our platform provides a secure and seamless interface for members to connect and collaborate. So if you're looking to tap into the pulse of the newest and most innovative ideas, then Indomita Secret Society is where you belong.",
+    demoLink: "https://jakisundays.github.io/clubIndomita/",
+    codeLink: "https://github.com/Jakisundays/clubIndomita",
+  },
+  {
+    image: require("/Users/jacobdominguez/Documents/codiyapa/portfolio/src/images/mockup3.png"),
+    alt: "Quiz App Mockup",
+    h1: "The Quiz Game Challenge: React, Axios, and Redux Power Edition",
+    desc: "Put your knowledge to the test with our ultimate quiz game website! With a collection of quizzes spanning from tech to sports and everything in between, you'll never run out of challenges to conquer. Access a world of endless possibilities, where you can attempt any quiz and test your skills. Every correct answer earns you credit, so show off your expertise and rise to the top of the leaderboard. Built with React.js, Axios, and Redux, this website is the ultimate platform for quiz enthusiasts everywhere. Get ready to show what you're made of!",
+    demoLink: "https://jakisundays.github.io/Quiz/",
+    codeLink: "https://github.com/Jakisundays/Quiz",
+  },
+  {
+    image: require("/Users/jacobdominguez/Documents/codiyapa/portfolio/src/images/batMockup.png"),
+    alt: "Batman landing",
+    h1: "Gotham's Digital Skies: A Next.js, Framer Motion, and Tailwind CSS Adventure",
+    desc: "Conquer the digital skies with our Next.js, Framer Motion, and Tailwind CSS powered website. Experience a dynamic and sleek interface, and witness the city come to life. Join the future of web design now!",
+    demoLink: "https://batman-landing.vercel.app/",
+    codeLink: "https://github.com/Jakisundays/batman-landing",
+  },
+  {
+    image: require("/Users/jacobdominguez/Documents/codiyapa/portfolio/src/images/windows98Mockup.png"),
+    alt: "Windows 98 Notes: The Ultimate Productivity Throwback",
+    h1: "Retro Notes: The React-Powered Windows 98 Experience",
+    desc: "Revive the 90s with our React-powered Windows 98-style note-taking app. Sign in and craft, edit, and manage your notes with ease, thanks to our simple, intuitive design. Unleash the full potential of our MongoDB, Express, and Node-based platform, and elevate your organizational game. Join the throwback revolution now!",
+    demoLink: "https://front-windows98.onrender.com/",
+    codeLink: "https://github.com/Jakisundays/front98",
+  },
+];

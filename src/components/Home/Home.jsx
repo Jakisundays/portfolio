@@ -29,7 +29,7 @@ const Home = () => {
                     <HomeHand> 🤚</HomeHand>
                     
                 </HomeH1>
-                <HomeH2>I'm a Front End Developer</HomeH2>
+                <HomeH2>Full-Stack MERN Developer</HomeH2>
                 <HomeInfo>
                     {bio.map((bio, index) => (
                         <Emojis key={index} emoji={bio.emoji} text={bio.text} />
