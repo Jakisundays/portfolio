@@ -16,7 +16,7 @@ export const HomeContainer = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 80vh;
+    min-height: 81vh;
     background-color: var(--dark);
     gap: 40px;
 
