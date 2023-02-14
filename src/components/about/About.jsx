@@ -7,18 +7,16 @@ const About = () => {
     'HTML',
     'CSS',
     'JavaScript',
-    'Bootstrap',
     'Python',
-    'SQL',
     'React.js',
     'Axios',
     'Redux',
-    'Canva',
     'Microsoft Office',
-    'Three.js',
     'Node.js',
     'Express.js',
-    'MongoDB'
+    'MongoDB',
+    'socket.io',
+    'JWT'
   ]
 
 

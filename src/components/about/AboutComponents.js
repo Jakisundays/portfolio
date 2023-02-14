@@ -92,6 +92,8 @@ export const AboutSpan2 = styled(Span)`
 export const AboutSkills = styled.ul`
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    height: 27vh;
     justify-content: center;
     align-items: start;
     list-style-type: none;
