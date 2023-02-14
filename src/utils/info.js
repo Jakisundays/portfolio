@@ -39,4 +39,12 @@ export const info = [
     demoLink: "https://front-windows98.onrender.com/",
     codeLink: "https://github.com/Jakisundays/front98",
   },
+  {
+    image: require("/Users/jacobdominguez/Documents/codiyapa/portfolio/src/images/chatMockup.png"),
+    alt: "Get caught up in the Chat Frenzy!",
+    h1: "Chat Frenzy",
+    desc: "The new, sleek chat app built with the MERN stack, ensuring a fast and reliable experience for all users. With security in mind, we've implemented JWT to protect your personal data and keep your conversations safe. Plus, the app looks great thanks to the use of SCSS for styling. And with Socket.IO for websockets, you can be sure that your messages will always be delivered quickly and efficiently. Whether you're chatting with friends or meeting new people, Chat Frenzy has got you covered.",
+    demoLink: "https://chat-frenzy.onrender.com",
+    codeLink: "https://github.com/Jakisundays/chat-app",
+  },
 ];
