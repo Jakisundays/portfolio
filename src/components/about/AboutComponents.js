@@ -97,6 +97,9 @@ export const AboutSkills = styled.ul`
     justify-content: center;
     align-items: start;
     list-style-type: none;
+    @media (max-width: 768px){
+        height: 35vh;
+    }
 `
 
 export const AboutLi = styled.li`

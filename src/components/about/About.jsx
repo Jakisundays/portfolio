@@ -16,7 +16,6 @@ const About = () => {
     'Express.js',
     'MongoDB',
     'socket.io',
-    'JWT'
   ]
 
 
